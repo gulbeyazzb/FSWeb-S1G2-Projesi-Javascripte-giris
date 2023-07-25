@@ -154,7 +154,7 @@ feetDonusturucu(100);
 
 /*
 Aşağıdakileri cocukSarkisi fonksiyonunda yap:
-1. Başlangıçta var olan maymun sayısını alın.
+1. Başlangıçta var olan maymun sayısını alın.5
 2. cocukSarkisi fonksiyonu aşağıdaki satırı sadece 1 kere yazacak şekilde kodunuzu yazın:
 
     "{sayı} küçük maymun yatakta zıplamış, biri düşüp başını çarpmış, Anne doktoru aramış, Doktor çok kızmış: Bir daha yatakta zıplamak yok!"
@@ -163,8 +163,14 @@ Aşağıdakileri cocukSarkisi fonksiyonunda yap:
 4. Bu döngüde, her seferinde cocukSarkisi fonsiyonu çalışsın ve console.log'a dönen metni yazdırsın.
 */
 
-function cocukSarkisi(/*buraya kodunu yazabilirsin*/) {
-  /*buraya kodunu yazabilirsin*/
+function cocukSarkisi(sayi) {
+  return console.log(
+    sayi +
+      " küçük maymun yatakta zıplamış, biri düşüp başını çarpmış, Anne doktoru aramış, Doktor çok kızmış: Bir daha yatakta zıplamak yok!"
+  );
+}
+for (i = 5; i > 0; i--) {
+  cocukSarkisi(i);
 }
 
 /* Görev 6 : Not Hesaplayıcı */
