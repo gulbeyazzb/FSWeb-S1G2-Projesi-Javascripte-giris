@@ -82,9 +82,12 @@ Aşağıdakileri yap:
  3. Hesaplanan köpeğin yaşını dönün.
  */
 
-function kopeginYasi(/*buraya kodunu yazabilirsin*/) {
-  /*buraya kodunu yazabilirsin*/
+function kopeginYasi(yıl) {
+  return (yas = yıl * 7);
 }
+console.log(
+  "Köpeğin yaşı, insanın 2 yılına göre: " + kopeginYasi(2) + " ' dür"
+);
 
 /* Görev 3 */
 /*
