@@ -27,10 +27,17 @@ if (surucuYasi > 18) {
 Görev 1b - Değerler (puanlamaya dahil değildir)
 
 Aşağıdakileri yap:   
-   1. 2 değişken tanımla ve bunlara değerler ata (isimlendirme olarak birinciDeger ikinciDegeri kullanabilirsin)
-
-   2. 1. değeri 2. değer ile karşılaştıran bir koşul oluşturun
-   3. 2. adımdaki koşul doğru olduğunda 1. değeri değiştirin
+   1. 2 değişken tanımla ve bunlara değerler ata (isimlendirme olarak birinciDeger ikinciDegeri kullanabilirsin)*/
+let birinciDeger = 25;
+let ikinciDeger = 25;
+/* 2. 1. değeri 2. değer ile karşılaştıran bir koşul oluşturun*/
+if (birinciDeger == ikinciDeger) {
+  birinciDeger = "Yaz";
+  console.log(birinciDeger);
+} else {
+  console.log(birinciDeger);
+}
+/* 3. 2. adımdaki koşul doğru olduğunda 1. değeri değiştirin
    4. 1. değeri Console'a yazdırın
 
    İPUCU: fonksiyon oluşturmaya gerek yok
