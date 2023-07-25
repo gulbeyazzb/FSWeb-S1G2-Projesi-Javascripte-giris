@@ -36,9 +36,9 @@ Aşağıdakileri yap:
    4. 1. değeri Console'a yazdırın
    İPUCU: fonksiyon oluşturmaya gerek yok
 */
-let birinciDeger = "Gülbeyaz";
+let birinciDeger = 25;
 let ikinciDeger = 25;
-if (birinciDeger == ikinciDeger) {
+if (birinciDeger === ikinciDeger) {
   birinciDeger = "Yaz";
   console.log(birinciDeger);
 } else {
@@ -68,7 +68,7 @@ Aşağıdakileri yaparak carpma isimli fonksiyonu tamamla:
    3. console.log(carpma(7,4)) ile yazdığın fonsiyonu test edin. Console'da sonucu 28 olarak görmelisin.
 */
 function carpma(a, b) {
-  sonuc = a * b;
+  let sonuc = a * b;
   return sonuc;
 }
 
@@ -165,6 +165,7 @@ Aşağdaki milDonusturucu fonksiyonunu aşağıdakileri kullanarak tamamla:
 
 function milDonusturucu(km) {
   // 1 km=0, 621 mil;
+  let mil;
   return console.log((mil = km * 0.621));
 }
 milDonusturucu(10);
@@ -179,6 +180,7 @@ Google'da arama ipucu: "feet cm dönüştürme"
 */
 
 function feetDonusturucu(cm) {
+  let feet;
   return console.log((feet = cm * 0.032808399) + " feet");
 }
 feetDonusturucu(100);
@@ -202,7 +204,7 @@ function cocukSarkisi(sayi) {
       " küçük maymun yatakta zıplamış, biri düşüp başını çarpmış, Anne doktoru aramış, Doktor çok kızmış: Bir daha yatakta zıplamak yok!"
   );
 }
-for (i = 5; i > 0; i--) {
+for (let i = 5; i > 0; i--) {
   cocukSarkisi(i);
 }
 
