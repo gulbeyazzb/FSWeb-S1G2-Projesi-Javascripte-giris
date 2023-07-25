@@ -19,8 +19,8 @@ let surucuYasi = 27;
 
 /* 2. Eğer yaş 18'den büyük ise Console'da true, değilse false değeri yazdırın.*/
 if (surucuYasi > 18) {
-  console.log(True);
-} else console.log(False);
+  console.log(true);
+} else console.log(false);
 /* İPUCU: fonksiyon oluşturmaya gerek yok*/
 
 /*
@@ -28,6 +28,7 @@ Görev 1b - Değerler (puanlamaya dahil değildir)
 
 Aşağıdakileri yap:   
    1. 2 değişken tanımla ve bunlara değerler ata (isimlendirme olarak birinciDeger ikinciDegeri kullanabilirsin)
+
    2. 1. değeri 2. değer ile karşılaştıran bir koşul oluşturun
    3. 2. adımdaki koşul doğru olduğunda 1. değeri değiştirin
    4. 1. değeri Console'a yazdırın
@@ -54,7 +55,6 @@ Aşağıdakileri yaparak carpma isimli fonksiyonu tamamla:
    2. a ve b'yi çarpıp, sonucu dönsün
    3. console.log(carpma(7,4)) ile yazdığın fonsiyonu test edin. Console'da sonucu 28 olarak görmelisin.
 */
-
 function carpma(/*buraya kodunu yazabilirsin*/) {
   /*buraya kodunu yazabilirsin*/
 }
