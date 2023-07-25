@@ -103,15 +103,48 @@ Aşağıdakileri oyun isimli fonksiyonu kullanarak yap.
 
 OYUNUN KURALLARI: Makas Kağıdı yener| Kağıt Taşı yener | Taş Makas'ı yener | veya beraberlik olur.
 */
+function bilgisayarinSecimi() {
+  let a = Math.floor(Math.random() * 9);
+  if (a >= 0) {
+    return (a = "Taş");
+  }
+  if (a <= 5) {
+    return (a = "Kağıt");
+  }
+  if (a >= 6) {
+    return (a = "Makas");
+  }
+  console.log(a);
+}
 
-function oyun(oyuncu, bilgisayar) {}
-
+function oyun(oyuncu, bilgisayar) {
+  if (oyuncu === "Taş" && bilgisayar === "Kağıt") {
+    return console.log("Kazanamadın!");
+  } else if (oyuncu === "Taş" && bilgisayar === "Taş") {
+    return console.log("Berabere!");
+  } else if (oyuncu === "Taş" && bilgisayar === "Makas") {
+    return console.log("Kazandın!");
+  } else if (oyuncu === "Kağıt" && bilgisayar === "Taş") {
+    return console.log("Kazandın!");
+  } else if (oyuncu === "Kağıt" && bilgisayar === "Kağıt") {
+    return console.log("Berabere!");
+  } else if (oyuncu === "Kağıt" && bilgisayar === "Makas") {
+    return console.log("Kaybettin!");
+  } else if (oyuncu === "Makas" && bilgisayar === "Taş") {
+    return console.log("Kaybettin!");
+  } else if (oyuncu === "Makas" && bilgisayar === "Kağıt") {
+    return console.log("Kazandın!");
+  } else {
+    return console.log("Berabere!");
+  }
+}
+bilgisayarinSecimi();
+oyun("Taş", bilgisayarinSecimi());
 // Şimdi Taş, Kağıt, Makas oyununu bilgisayara karşı oynayalım!
 /*
 Öncelikle aşağıdakileri yap:
 1. Bilgisayarın seçimini rastgele oluşturacağım bir fonksiyon tanımla. Örn: 
-   function bilgisayarinSecimi() {
-   }
+   
 2. Fonsiyonun içinde bilgisayarın seçimi için bir değişken tanımla
 3. Math.random'ı kullanarak bilgisayarın seçimini oluşturun (Math.random 0-1 arasında bir değer verecek)
 4. Bu rastgele değeri "Taş", "Kağıt" veya "Makas"a dönüştüren bir koşul oluşturun
@@ -217,11 +250,32 @@ Aşağıdakileri sesliHarfSayaci fonskiyonunda yap.
 
 function sesliHarfSayaci(kelime) {
   let sayac = 0;
-  const sesliHarf = ["a", "e", "ı", "i", "o", "ö", "u", "ü"];
-  let array1 = kelime.split("");
-  return console.log(array1);
+  const sesli_harf = [
+    "a",
+    "e",
+    "ı",
+    "i",
+    "o",
+    "ö",
+    "u",
+    "ü",
+    "A",
+    "E",
+    "I",
+    "İ",
+    "O",
+    "Ö",
+    "U",
+    "Ü",
+  ];
+  for (let harf of kelime) {
+    if (sesli_harf.includes(harf)) {
+      sayac++;
+    }
+  }
+  return console.log(sayac);
 }
-sesliHarfSayaci("Gülbeyaz");
+sesliHarfSayaci("GÜlbeyaz BAYRAM");
 
 /* Lütfen bu satırın alt tarafını değiştirmeyin */
 function sa() {
