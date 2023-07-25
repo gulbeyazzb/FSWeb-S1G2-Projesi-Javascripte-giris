@@ -56,6 +56,7 @@ Aşağıdakileri yap:
 let deger1 = "1999";
 let sayi = Number(deger1);
 console.log(sayi);
+console.log(typeof sayi);
 
 /*
 Görev 1d - Çarpma
