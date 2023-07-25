@@ -28,7 +28,7 @@ Görev 1b - Değerler (puanlamaya dahil değildir)
 
 Aşağıdakileri yap:   
    1. 2 değişken tanımla ve bunlara değerler ata (isimlendirme olarak birinciDeger ikinciDegeri kullanabilirsin)*/
-let birinciDeger = 25;
+let birinciDeger = "Gülbeyaz";
 let ikinciDeger = 25;
 /* 2. 1. değeri 2. değer ile karşılaştıran bir koşul oluşturun*/
 if (birinciDeger == ikinciDeger) {
