@@ -83,11 +83,11 @@ Aşağıdakileri yap:
  */
 
 function kopeginYasi(yıl) {
-  return (yas = yıl * 7);
+  return console.log(
+    "Köpeğin yaşı, insanın 2 yılına göre: " + yıl * 7 + " ' dür"
+  );
 }
-console.log(
-  "Köpeğin yaşı, insanın 2 yılına göre: " + kopeginYasi(2) + " ' dür"
-);
+kopeginYasi(2);
 
 /* Görev 3 */
 /*
@@ -103,9 +103,7 @@ Aşağıdakileri oyun isimli fonksiyonu kullanarak yap.
 OYUNUN KURALLARI: Makas Kağıdı yener| Kağıt Taşı yener | Taş Makas'ı yener | veya beraberlik olur.
 */
 
-function oyun(oyuncu, bilgisayar) {
-  /*buraya kodunu yazabilirsin*/
-}
+function oyun(oyuncu, bilgisayar) {}
 
 // Şimdi Taş, Kağıt, Makas oyununu bilgisayara karşı oynayalım!
 /*
