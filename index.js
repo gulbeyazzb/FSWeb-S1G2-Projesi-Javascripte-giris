@@ -1,5 +1,7 @@
 /* Görev 1: Isınalım Biraz :) */
 
+const { isNumberObject } = require("util/types");
+
 /* TÜM CEVAPLARINI BİR FUNCTION İÇİNDE VERDİĞİNİZ EMİN OL (GÖREV 1D - GÖREV 6). AKSİ TAKTİRDE, OTOMATİK TEST SİSTEMİ ÇALIŞMAYACAKTIR. */
 
 // Görev 1a, 1b ve 1c puanlamaya dahil değildir
@@ -51,6 +53,9 @@ Aşağıdakileri yap:
 
    İPUCU: Number metoduna bakabilirsin
 */
+let deger1 = "1999";
+let sayi = Number(deger1);
+console.log(sayi);
 
 /*
 Görev 1d - Çarpma
