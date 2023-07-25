@@ -83,12 +83,10 @@ Aşağıdakileri yap:
  3. Hesaplanan köpeğin yaşını dönün.
  */
 
-function kopeginYasi(yıl) {
-  return console.log(
-    "Köpeğin yaşı, insanın 2 yılına göre: " + yıl * 7 + " ' dür"
-  );
+function kopeginYasi(insanYasi) {
+  return insanYasi * 7;
 }
-kopeginYasi(2);
+console.log(kopeginYasi(2));
 
 /* Görev 3 */
 /*
@@ -96,12 +94,12 @@ Aşağıdakileri oyun isimli fonksiyonu kullanarak yap.
 1. 2 argüman alın: oyuncunun tercihini alan bir string değer: "Taş", "Kağıt" veya "Makas" 
    ve bilgisayarınkini alan: "Taş", "Kağıt" veya "Makas"
    Not: string değerlerin yazımına dikkat! İlk harf büyük ve türkçe karakterler kullanarak. Yoksa testi geçemez.
-2. Aşağıdaki oyun kurallarına göre oyuncunun kazanıp kazanamadığını veya berabere kalıp kalmadığını dönün - (uygulamanın oluşturduğu çıktı tam olarak aşağıdakinin aynısı olmalı)
+2. Aşağıdaki oyun kurallarına göre oyuncunun kazanıp kazanamadığını veya Beraberlik kalıp kalmadığını dönün - (uygulamanın oluşturduğu çıktı tam olarak aşağıdakinin aynısı olmalı)
  - kazanma durumunda "Kazandın!" dönmeli
  - kaybetme durumunda "Kaybettin!" dönmeli
- - beraberlikte "Beraberlik" dönmeli
+ - Beraberlikte "Beraberlik" dönmeli
 
-OYUNUN KURALLARI: Makas Kağıdı yener| Kağıt Taşı yener | Taş Makas'ı yener | veya beraberlik olur.
+OYUNUN KURALLARI: Makas Kağıdı yener| Kağıt Taşı yener | Taş Makas'ı yener | veya Beraberlik olur.
 */
 function bilgisayarinSecimi() {
   let a = Math.floor(Math.random() * 3);
@@ -118,26 +116,26 @@ function bilgisayarinSecimi() {
 
 function oyun(oyuncu, bilgisayar) {
   if (oyuncu === "Taş" && bilgisayar === "Kağıt") {
-    return console.log("Kazanamadın!");
+    return "Kaybettin!";
   } else if (oyuncu === "Taş" && bilgisayar === "Taş") {
-    return console.log("Berabere!");
+    return "Beraberlik";
   } else if (oyuncu === "Taş" && bilgisayar === "Makas") {
-    return console.log("Kazandın!");
+    return "Kazandın!";
   } else if (oyuncu === "Kağıt" && bilgisayar === "Taş") {
-    return console.log("Kazandın!");
+    return "Kazandın!";
   } else if (oyuncu === "Kağıt" && bilgisayar === "Kağıt") {
-    return console.log("Berabere!");
+    return "Beraberlik";
   } else if (oyuncu === "Kağıt" && bilgisayar === "Makas") {
-    return console.log("Kaybettin!");
+    return "Kaybettin!";
   } else if (oyuncu === "Makas" && bilgisayar === "Taş") {
-    return console.log("Kaybettin!");
+    return "Kaybettin!";
   } else if (oyuncu === "Makas" && bilgisayar === "Kağıt") {
-    return console.log("Kazandın!");
+    return "Kazandın!";
   } else {
-    return console.log("Berabere!");
+    return "Beraberlik";
   }
 }
-console.log(bilgisayarinSecimi());
+
 oyun("Taş", bilgisayarinSecimi());
 // Şimdi Taş, Kağıt, Makas oyununu bilgisayara karşı oynayalım!
 /*
@@ -166,9 +164,9 @@ Aşağdaki milDonusturucu fonksiyonunu aşağıdakileri kullanarak tamamla:
 function milDonusturucu(km) {
   // 1 km=0, 621 mil;
   let mil;
-  return console.log((mil = km * 0.621));
+  return (mil = km * 0.621371);
 }
-milDonusturucu(10);
+console.log(milDonusturucu(10));
 //Görev 4b - Santimetreden Feet
 /*
 Aşağıdakileri feetDonusturucu fonsiyonunu kullanarak yap:
@@ -181,9 +179,9 @@ Google'da arama ipucu: "feet cm dönüştürme"
 
 function feetDonusturucu(cm) {
   let feet;
-  return console.log((feet = cm * 0.032808399) + " feet");
+  return (feet = cm / 30.48);
 }
-feetDonusturucu(100);
+console.log(feetDonusturucu(100));
 
 /* Görev 5 : 5 küçük maymun yatakta zıplamış şarkısını çocuklar için hazırladığımı varsayalım. https://www.youtube.com/watch?v=e4EJ34xnlxk */
 
@@ -199,13 +197,14 @@ Aşağıdakileri cocukSarkisi fonksiyonunda yap:
 */
 
 function cocukSarkisi(sayi) {
-  return console.log(
+  return (
     sayi +
-      " küçük maymun yatakta zıplamış, biri düşüp başını çarpmış, Anne doktoru aramış, Doktor çok kızmış: Bir daha yatakta zıplamak yok!"
+    " küçük maymun yatakta zıplamış, biri düşüp başını çarpmış, Anne doktoru aramış, Doktor çok kızmış: Bir daha yatakta zıplamak yok!"
   );
 }
+
 for (let i = 5; i > 0; i--) {
-  cocukSarkisi(i);
+  console.log(cocukSarkisi(i));
 }
 
 /* Görev 6 : Not Hesaplayıcı */
@@ -224,19 +223,19 @@ Aşağdakileri notHesapla fonksiyonunda yap.
 */
 
 function notHesapla(not) {
-  if (not <= 100 && not >= 90) {
-    return console.log(not + " notu ile A aldın");
-  } else if (not < 90 && not >= 80) {
-    return console.log(not + " notu ile B aldın");
-  } else if (not < 80 && not >= 70) {
-    return console.log(not + " notu ile C aldın");
-  } else if (not < 70 && not >= 60) {
-    return console.log(not + " notu ile D aldın");
+  if (not >= 90) {
+    return "A aldın";
+  } else if (not >= 80) {
+    return "B aldın";
+  } else if (not >= 70) {
+    return "C aldın";
+  } else if (not >= 60) {
+    return "D aldın";
   } else {
-    return console.log(not + " notu ile F aldın");
+    return "F aldın";
   }
 }
-notHesapla(85);
+console.log(notHesapla(15));
 
 /* Bonus Çalışma: Sesli harf sayacı - Kaç tane sesli harf var? */
 
