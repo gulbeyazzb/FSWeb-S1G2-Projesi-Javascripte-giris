@@ -145,7 +145,10 @@ Aşağıdakileri feetDonusturucu fonsiyonunu kullanarak yap:
 Google'da arama ipucu: "feet cm dönüştürme"
 */
 
-function feetDonusturucu(cm) {}
+function feetDonusturucu(cm) {
+  return console.log((feet = cm * 0.032808399) + " feet");
+}
+feetDonusturucu(100);
 
 /* Görev 5 : 5 küçük maymun yatakta zıplamış şarkısını çocuklar için hazırladığımı varsayalım. https://www.youtube.com/watch?v=e4EJ34xnlxk */
 
