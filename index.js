@@ -14,11 +14,14 @@ Bunun için cevabı direk console'a logla veya çağırdığın fonksiyondan dö
 Görev 1a - Ehliyet Yaşı (puanlamaya dahil değildir)
 
 Aşağıdakileri yap:   
-   1. surucuYasi isimli bir değişken yaz ve bir sayı ata.
-   2. Eğer yaş 18'den büyük ise Console'da true, değilse false değeri yazdırın.
+   1. surucuYasi isimli bir değişken yaz ve bir sayı ata.*/
+let surucuYasi = 27;
 
-   İPUCU: fonksiyon oluşturmaya gerek yok
-*/
+/* 2. Eğer yaş 18'den büyük ise Console'da true, değilse false değeri yazdırın.*/
+if (surucuYasi > 18) {
+  console.log(True);
+} else console.log(False);
+/* İPUCU: fonksiyon oluşturmaya gerek yok*/
 
 /*
 Görev 1b - Değerler (puanlamaya dahil değildir)
