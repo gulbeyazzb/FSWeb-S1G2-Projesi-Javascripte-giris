@@ -66,9 +66,12 @@ Aşağıdakileri yaparak carpma isimli fonksiyonu tamamla:
    2. a ve b'yi çarpıp, sonucu dönsün
    3. console.log(carpma(7,4)) ile yazdığın fonsiyonu test edin. Console'da sonucu 28 olarak görmelisin.
 */
-function carpma(/*buraya kodunu yazabilirsin*/) {
-  /*buraya kodunu yazabilirsin*/
+function carpma(a, b) {
+  sonuc = a * b;
+  return sonuc;
 }
+
+console.log(carpma(7, 4));
 
 /* Görev 2 : Köpeğin Yaşı */
 
