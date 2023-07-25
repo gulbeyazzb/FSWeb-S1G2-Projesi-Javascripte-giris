@@ -1,5 +1,6 @@
 /* Görev 1: Isınalım Biraz :) */
 
+const { arrayBuffer } = require("node:stream/consumers");
 const { isNumberObject } = require("util/types");
 
 /* TÜM CEVAPLARINI BİR FUNCTION İÇİNDE VERDİĞİNİZ EMİN OL (GÖREV 1D - GÖREV 6). AKSİ TAKTİRDE, OTOMATİK TEST SİSTEMİ ÇALIŞMAYACAKTIR. */
@@ -214,9 +215,13 @@ Aşağıdakileri sesliHarfSayaci fonskiyonunda yap.
 İPUCU - .includes() methoduna bakabilirsin. (https://www.w3schools.com/jsref/jsref_includes.asp)
 */
 
-function sesliHarfSayaci(/*buraya kodunu yazabilirsin*/) {
-  /*buraya kodunu yazabilirsin*/
+function sesliHarfSayaci(kelime) {
+  let sayac = 0;
+  const sesliHarf = ["a", "e", "ı", "i", "o", "ö", "u", "ü"];
+  let array1 = kelime.split("");
+  return console.log(array1);
 }
+sesliHarfSayaci("Gülbeyaz");
 
 /* Lütfen bu satırın alt tarafını değiştirmeyin */
 function sa() {
