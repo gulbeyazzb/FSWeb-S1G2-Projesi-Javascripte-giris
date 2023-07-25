@@ -188,9 +188,20 @@ Aşağdakileri notHesapla fonksiyonunda yap.
  dönün
 */
 
-function notHesapla(/*buraya kodunu yazabilirsin*/) {
-  /*buraya kodunu yazabilirsin*/
+function notHesapla(not) {
+  if (not <= 100 && not >= 90) {
+    return console.log(not + " notu ile A aldın");
+  } else if (not < 90 && not >= 80) {
+    return console.log(not + " notu ile B aldın");
+  } else if (not < 80 && not >= 70) {
+    return console.log(not + " notu ile C aldın");
+  } else if (not < 70 && not >= 60) {
+    return console.log(not + " notu ile D aldın");
+  } else {
+    return console.log(not + " notu ile F aldın");
+  }
 }
+notHesapla(85);
 
 /* Bonus Çalışma: Sesli harf sayacı - Kaç tane sesli harf var? */
 
