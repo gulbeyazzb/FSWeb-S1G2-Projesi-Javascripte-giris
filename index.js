@@ -104,17 +104,16 @@ Aşağıdakileri oyun isimli fonksiyonu kullanarak yap.
 OYUNUN KURALLARI: Makas Kağıdı yener| Kağıt Taşı yener | Taş Makas'ı yener | veya beraberlik olur.
 */
 function bilgisayarinSecimi() {
-  let a = Math.floor(Math.random() * 9);
-  if (a >= 0) {
+  let a = Math.floor(Math.random() * 3);
+  if (a == 0) {
     return (a = "Taş");
   }
-  if (a <= 5) {
+  if (a == 1) {
     return (a = "Kağıt");
   }
-  if (a >= 6) {
+  if (a == 2) {
     return (a = "Makas");
   }
-  console.log(a);
 }
 
 function oyun(oyuncu, bilgisayar) {
@@ -138,7 +137,7 @@ function oyun(oyuncu, bilgisayar) {
     return console.log("Berabere!");
   }
 }
-bilgisayarinSecimi();
+console.log(bilgisayarinSecimi());
 oyun("Taş", bilgisayarinSecimi());
 // Şimdi Taş, Kağıt, Makas oyununu bilgisayara karşı oynayalım!
 /*
